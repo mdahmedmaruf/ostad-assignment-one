@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Profile Card</title>
+    <!-- styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #ededed;
+        }
+        .main-wrapper {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .profile-card {
+            width: 400px;
+            height: 550px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 5px;
+        }
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .profile-image img {
+            width: 100%;
+            height: auto;
+        }
+        .profile-title h2 {
+            font-family: "Lato", sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+            color: #545353;
+        }
+        .profile-designation p {
+            font-family: "Lato", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.2em;
+            color: #747474;
+        }
+        .profile-description p {
+            font-family: "Lato", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+            border-bottom: 1px solid #ededed;
+            padding-bottom: 20px;
+        }
+        .profile-contact {
+            padding-top: 10px;
+            font-family: "Lato", sans-serif;
+        }
+        .profile-email,
+        .profile-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-icon {
+            color: #747474;
+            margin-top: 5px;
+        }
+        .profile-contact a {
+            color: #747474;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <div class="profile-title">
+                <h2>John Doe</h2>
+            </div>
+            <div class="profile-designation">
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="profile-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti commodi odit quia laudantium quidem culpa.</p>
+            </div>
+            <div class="profile-contact">
+                <div class="profile-email">
+                    <div class="contact-icon">
+                        <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <a href="mailto:mdahmedmaruf@gmail.com">mdahmedmaruf@gmail.com</a>
+                </div>
+                <div class="profile-phone">
+                    <div class="contact-icon">
+                        <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                    </div>
+                    <a href="tel:+8801914642486">01914642486</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
